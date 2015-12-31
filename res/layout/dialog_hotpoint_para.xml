@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="兴趣点高度：" />
+
+        <EditText
+            android:id="@+id/hotpoint_altitude"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hotpoint_altitude"
+            android:text="30"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="兴趣点半径：" />
+
+        <EditText
+            android:id="@+id/hotpoint_radius"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hotpoint_radius"
+            android:inputType="number" 
+            android:text="10"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="兴趣点速度：" />
+
+        <EditText
+            android:id="@+id/hotpoint_velocity"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hotpoint_velocity"
+            android:inputType="number" 
+            android:text="5"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="环绕点运动方向：" />
+
+        <Spinner
+            android:id="@+id/hotpoint_surroundDirection"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/hotpoint_surroundDirection" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="运动方向：" />
+
+        <Spinner
+            android:id="@+id/hotpoint_interestDirection"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/hotpoint_interestDirection" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="航向模式：" />
+
+        <Spinner
+            android:id="@+id/hotpoint_navigationMode"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/hotpoint_navigationMode" />
+    </LinearLayout>
+   
+
+</LinearLayout>
