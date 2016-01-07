@@ -431,6 +431,12 @@
     <string name="Pos_closeGS">关闭地面站</string>
     <string name="Pos_UpDown">上传航点</string>
     <string name="Pos_Begin">开始</string>
+    <string name="Pos_GetPoint">拾取航点</string>
+    <string name="Pos_OverGetPoint">结束拾取航点</string>
+    <string name="Pos_Pause">暂停</string>
+    <string name="Pos_cancel">取消</string>
+    <string name="Pos_resume">恢复</string>
+    <string name="Pos_GoHome">返航</string>
 	<!-- Learn -->
 	<string name="learn_record">开始记录航点</string>
 	<string name="learn_stoprecord">停止记录航点</string>

@@ -34,7 +34,9 @@
             android:background="@android:color/transparent"
             android:onClick="onReturn"
             android:scaleType="centerInside"
-            android:src="@drawable/selector_back_button" />
+            android:src="@drawable/selector_back_button" 
+            android:focusable="true"
+            android:focusableInTouchMode="true"/>
 
         <TextView
             android:id="@+id/ConnectStatePosTextView"
@@ -74,9 +76,8 @@
                     android:text="@string/gs_open_ground_station"
                     android:textColor="@color/white"
                     android:textSize="14sp" />
-
-                <Button
-                    android:id="@+id/Pos_CloseGroundStation"
+                 <Button 
+                    android:id="@+id/Pos_Getpoint"
                     android:layout_width="150dp"
                     android:layout_height="35dp"
                     android:layout_marginLeft="10dp"
@@ -84,9 +85,11 @@
                     android:background="@drawable/selector_button"
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp"
-                    android:text="@string/Pos_closeGS"
+                    android:text="@string/Pos_GetPoint"
                     android:textColor="@color/white"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"/>
+
+               
 
                 <Button
                     android:id="@+id/Pos_UpDownWaypoint"
@@ -113,6 +116,56 @@
                     android:text="@string/Pos_Begin"
                     android:textColor="@color/white"
                     android:textSize="14sp" />
+                <Button
+                    android:id="@+id/Pos_Pause"
+                    android:layout_width="150dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/selector_button"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="@string/Pos_Pause"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+                <Button
+                    android:id="@+id/Pos_Resume"
+                    android:layout_width="150dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/selector_button"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="@string/Pos_resume"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+                
+                 <Button
+                    android:id="@+id/Pos_CloseGroundStation"
+                    android:layout_width="150dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/selector_button"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="@string/Pos_closeGS"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+                 <Button
+                    android:id="@+id/Pos_GoHome"
+                    android:layout_width="150dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/selector_button"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="@string/Pos_GoHome"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+               
             </LinearLayout>
         </RelativeLayout>
     </ScrollView>
@@ -156,7 +209,9 @@
                 android:id="@+id/pos_value"
                 android:layout_width="50dp"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/pos_forward" />
+                android:layout_below="@id/pos_forward" 
+                android:inputType="number"
+                android:text="10"/>
         </LinearLayout>
     </RelativeLayout>
 
@@ -210,5 +265,21 @@
                 android:textSize="14sp" />
         </RelativeLayout>
     </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/selector_button"
+        android:id="@+id/Pos_uavview" >
+
+        <com.ypai.uav.MyView.UAVLogo
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" 
+            android:id="@+id/Pos_uavlogo"/>
+    </RelativeLayout>
 
 </RelativeLayout>
